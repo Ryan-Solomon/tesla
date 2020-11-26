@@ -1,4 +1,4 @@
-.model-3-container {
+.model-3-top-container {
   height: 100vh;
   background: linear-gradient(
       to bottom,
@@ -16,4 +16,44 @@
   font-size: 3rem;
   position: relative;
   border-bottom: 0.5px solid grey;
+}
+
+.interior-container {
+  height: 100vh;
+}
+
+.model-3-interior-container {
+  height: 70%;
+  background: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.159),
+      rgba(0, 0, 0, 0.844)
+    ),
+    url('../../img/model-3-interior.jpg') center center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  .car-info {
+    margin-top: 16rem;
+  }
+}
+
+.interior-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  grid-gap: 1rem;
+  width: 70%;
+  margin: auto;
+  height: 30%;
+
+  h2 {
+    margin-top: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
 }
