@@ -1,13 +1,17 @@
 export type TCarInfo = {
-  Battery: string;
-  Weight: string;
-  Acceleration: string;
-  Range: string;
-  Drive: string;
-  Seating: string;
-  Wheels: string;
-  Cargo: string;
-  Displays: string;
+  Name: string;
+  MainInfo: [
+    { name: string; value: string },
+    { name: string; value: string },
+    { name: string; value: string },
+    { name: string; value: string },
+    { name: string; value: string },
+    { name: string; value: string },
+    { name: string; value: string },
+    { name: string; value: string },
+    { name: string; value: string },
+    { name: string; value: string }
+  ];
 };
 
 export type TVehicleInfo = {
