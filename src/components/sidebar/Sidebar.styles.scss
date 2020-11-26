@@ -4,6 +4,7 @@
   width: 25vw;
   height: 100vh;
   background: black;
+  z-index: 1;
 
   button.hide-sidebar-button {
     position: absolute;
@@ -53,5 +54,6 @@
   100% {
     opacity: 0;
     transform: translateX(100%);
+    display: none;
   }
 }
