@@ -8,21 +8,26 @@ const AccountDetailsForm = () => {
       <form>
         <section className='first-name form-section'>
           <label htmlFor='first-name'>First Name</label>
-          <input type='text' id='first-name' autoFocus />
+          <input required type='text' id='first-name' autoFocus />
         </section>
         <section className='last-name form-section'>
           <label htmlFor='last-name'>Last Name</label>
-          <input type='text ' id='last-name' />
+          <input required type='text ' id='last-name' />
         </section>
         <section className='email form-section'>
           <label htmlFor='email'>Email Address</label>
-          <input type='email' id='email' />
+          <input required type='email' id='email' />
         </section>
         <section className='phone form-section'>
           <label htmlFor='phone'>Phone Number</label>
-          <input type='tel' id='phone' />
+          <input required type='tel' id='phone' />
         </section>
       </form>
+      <p>
+        By entering my account details above, I agree to be contacted about
+        Tesla products, including through automated calls or texts. This is not
+        a condition of purchase.
+      </p>
     </section>
   );
 };
