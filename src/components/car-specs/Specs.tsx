@@ -10,15 +10,16 @@ const Specs = () => {
 
   return (
     <section className='specs-container'>
-      <div className='hero-image'>
-        <img src='yeet' alt='' />
-      </div>
+      <div className='hero-image'></div>
       <div className='specs-info'>
-        <h1>{Name}</h1>
+        <div className='specs-title'>
+          <h1>{Name} Specs</h1>
+        </div>
         <div className='two-column-specs'>
           {MainInfo.map((item) => {
             return (
               <div className='item-info'>
+                <div className='title-line'></div>
                 <h3>{item.name}</h3>
                 <h5>{item.value}</h5>
               </div>
@@ -29,7 +30,5 @@ const Specs = () => {
     </section>
   );
 };
-
-// Add image to left side and create column
 
 export default Specs;
