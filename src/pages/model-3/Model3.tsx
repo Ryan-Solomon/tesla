@@ -1,6 +1,7 @@
 import React from 'react';
 import CarInfoComponent from '../../components/car-info-component/CarInfoComponent';
 import './Model3.styles.scss';
+import Specs from './../../components/car-specs/Specs';
 
 const Model3 = () => {
   return (
@@ -32,7 +33,7 @@ const Model3 = () => {
           </div>
         </div>
       </div>
-      {/* Specs Component */}
+      <Specs />
     </>
   );
 };
