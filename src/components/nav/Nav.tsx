@@ -3,6 +3,7 @@ import './Nav.styles.scss';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import Sidebar from '../sidebar/Sidebar';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -14,12 +15,24 @@ const Nav = () => {
           <h1>TESLA</h1>
         </div>
         <ul className='nav-items'>
-          <li>MODEL S</li>
-          <li>MODEL 3</li>
-          <li>MODEL X</li>
-          <li>MODEL Y</li>
-          <li>ROADSTER</li>
-          <li>CYBERTRUCK</li>
+          <Link to='/modelS'>
+            <li>MODEL S</li>
+          </Link>
+          <Link to='/model3'>
+            <li>MODEL 3</li>
+          </Link>
+          <Link to='/modelY'>
+            <li>MODEL Y</li>
+          </Link>
+          <Link to='/modelX'>
+            <li>MODEL X</li>
+          </Link>
+          <Link to='/roadster'>
+            <li>ROADSTER</li>
+          </Link>
+          <Link to='/cybertruck'>
+            <li>CYBERTRUCK</li>
+          </Link>
         </ul>
         <div className='hamburger'>
           <motion.button
