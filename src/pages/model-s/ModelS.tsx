@@ -1,4 +1,5 @@
 import React from 'react';
+import './ModelS.styles.scss';
 
 const ModelS = () => {
   return (
