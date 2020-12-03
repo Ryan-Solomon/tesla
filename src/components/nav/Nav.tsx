@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Nav.styles.scss';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import Sidebar from '../sidebar/Sidebar';
+import { motion } from 'framer-motion';
 
 const Nav = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -21,12 +22,14 @@ const Nav = () => {
           <li>CYBERTRUCK</li>
         </ul>
         <div className='hamburger'>
-          <button
+          <motion.button
             onClick={() => setShowSidebar(true)}
             className='hamburger-button'
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
             <GiHamburgerMenu />
-          </button>
+          </motion.button>
         </div>
       </nav>
       <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />

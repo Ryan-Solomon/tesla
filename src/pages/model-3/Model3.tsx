@@ -2,13 +2,25 @@ import React from 'react';
 import CarInfoComponent from '../../components/car-info-component/CarInfoComponent';
 import './Model3.styles.scss';
 import Specs from './../../components/car-specs/Specs';
+import { motion } from 'framer-motion';
 
 const Model3 = () => {
   return (
     <>
       <div className='model-3-top-container'>
         <header>
-          <h1 className='car-title'>Model 3</h1>
+          <motion.h1
+            animate={{
+              opacity: 1,
+              transition: {
+                duration: 2,
+              },
+            }}
+            initial={{ opacity: 0 }}
+            className='car-title'
+          >
+            Model 3
+          </motion.h1>
         </header>
         <CarInfoComponent />
       </div>

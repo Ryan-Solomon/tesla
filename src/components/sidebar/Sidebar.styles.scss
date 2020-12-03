@@ -5,6 +5,7 @@
   height: 100vh;
   background: black;
   z-index: 1;
+  opacity: 0;
 
   button.hide-sidebar-button {
     position: absolute;
@@ -47,7 +48,17 @@
 }
 
 .hide-sidebar {
-  animation: hidesidebar 0.2s ease forwards;
+  animation: hidesidebar 1s ease forwards;
+}
+
+.show-sidebar {
+  animation: showsidebar 1s ease forwards;
+}
+
+@keyframes showsidebar {
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes hidesidebar {
