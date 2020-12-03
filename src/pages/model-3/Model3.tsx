@@ -3,6 +3,7 @@ import CarInfoComponent from '../../components/car-info-component/CarInfoCompone
 import './Model3.styles.scss';
 import Specs from './../../components/car-specs/Specs';
 import { motion } from 'framer-motion';
+import { titleAnimation } from './../../animations/animations';
 
 const Model3 = () => {
   return (
@@ -10,13 +11,9 @@ const Model3 = () => {
       <div className='model-3-top-container'>
         <header>
           <motion.h1
-            animate={{
-              opacity: 1,
-              transition: {
-                duration: 2,
-              },
-            }}
-            initial={{ opacity: 0 }}
+            variants={titleAnimation}
+            initial='hidden'
+            animate='show'
             className='car-title'
           >
             Model 3
