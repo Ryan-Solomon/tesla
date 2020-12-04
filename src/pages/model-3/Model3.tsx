@@ -8,7 +8,12 @@ import { titleAnimation, pageAnimation } from './../../animations/animations';
 const Model3 = () => {
   return (
     <>
-      <motion.div variants={pageAnimation} initial='hidden' animate='show'>
+      <motion.div
+        variants={pageAnimation}
+        initial='hidden'
+        animate='show'
+        exit='exit'
+      >
         <div className='model-3-top-container'>
           <header>
             <motion.h1

@@ -18,7 +18,7 @@ const Specs = () => {
         <div className='two-column-specs'>
           {MainInfo.map((item) => {
             return (
-              <div className='item-info'>
+              <div key={item.name} className='item-info'>
                 <div className='title-line'></div>
                 <h3>{item.name}</h3>
                 <h5>{item.value}</h5>
