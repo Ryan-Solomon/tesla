@@ -6,11 +6,21 @@ import './LandingHero.styles.scss';
 
 type Props = {
   title: string;
+  backgroundUrl: string;
 };
 
-const LandingHero: FC<Props> = ({ title }) => {
+const LandingHero: FC<Props> = ({ title, backgroundUrl }) => {
+  const backgroundStyles = {
+    background: `linear-Gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.52),
+      rgba(0, 0, 0, 0.844)
+    ),
+    url(${backgroundUrl}) center center / cover no-repeat`,
+  };
+
   return (
-    <div className='model-3-top-container'>
+    <div style={backgroundStyles} className='model-3-top-container'>
       <header>
         <motion.h1
           variants={titleAnimation}

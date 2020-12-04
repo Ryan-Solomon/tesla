@@ -7,6 +7,8 @@ import { titleAnimation, pageAnimation } from './../../animations/animations';
 import LandingHero from '../../components/landing-hero/LandingHero';
 import Interior from '../../components/interior/Interior';
 
+import backgroundUrl from '../../img/model3Home.jpg';
+
 const Model3 = () => {
   return (
     <>
@@ -16,7 +18,7 @@ const Model3 = () => {
         animate='show'
         exit='exit'
       >
-        <LandingHero title='Model 3' />
+        <LandingHero backgroundUrl={backgroundUrl} title='Model 3' />
         <Interior />
         <Specs />
       </motion.div>
