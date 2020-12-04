@@ -4,6 +4,7 @@ import './Model3.styles.scss';
 import Specs from './../../components/car-specs/Specs';
 import { motion } from 'framer-motion';
 import { titleAnimation, pageAnimation } from './../../animations/animations';
+import LandingHero from '../../components/landing-hero/LandingHero';
 
 const Model3 = () => {
   return (
@@ -14,19 +15,7 @@ const Model3 = () => {
         animate='show'
         exit='exit'
       >
-        <div className='model-3-top-container'>
-          <header>
-            <motion.h1
-              variants={titleAnimation}
-              initial='hidden'
-              animate='show'
-              className='car-title'
-            >
-              Model 3
-            </motion.h1>
-          </header>
-          <CarInfoComponent />
-        </div>
+        <LandingHero />
         <div className='interior-container'>
           <div className='model-3-interior-container'>
             <CarInfoComponent />
