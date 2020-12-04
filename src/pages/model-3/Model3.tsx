@@ -16,7 +16,7 @@ const Model3 = () => {
         animate='show'
         exit='exit'
       >
-        <LandingHero />
+        <LandingHero title='Model 3' />
         <Interior />
         <Specs />
       </motion.div>

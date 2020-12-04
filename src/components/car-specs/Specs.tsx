@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useRouteMatch } from 'react-router-dom';
 import { useAppContext } from '../../context/appContext';
 import './Specs.styles.scss';
 
 const Specs = () => {
-  const {
-    vehicles: { model3 },
-  } = useAppContext();
-  const { Name, MainInfo } = model3;
+  const { path } = useRouteMatch();
+  const [vehicle, setVehicle] = useState(path.slice(1));
+
+  useEffect(() => {
+    setVehicle(path.slice(1));
+  }, [path]);
+
+  const { vehicles } = useAppContext();
+  const currentVehicle = vehicles[vehicle];
+
+  console.log(vehicle);
+
+  const { Name, MainInfo } = currentVehicle;
 
   return (
     <section className='specs-container'>

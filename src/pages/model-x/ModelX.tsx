@@ -1,6 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../../animations/animations';
+import LandingHero from '../../components/landing-hero/LandingHero';
+import Interior from '../../components/interior/Interior';
+import Specs from '../../components/car-specs/Specs';
 
 const ModelX = () => {
   return (
@@ -10,7 +13,9 @@ const ModelX = () => {
       animate='show'
       exit='exit'
     >
-      <h1>Model X</h1>
+      <LandingHero title='Model X' />
+      <Interior />
+      <Specs />
     </motion.div>
   );
 };

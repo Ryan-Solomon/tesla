@@ -16,4 +16,19 @@ export const vehicleInfo: TVehicleInfo = {
       { name: 'Warranty', value: 'Basic Vehicle - 4 years ' },
     ],
   },
+  modelX: {
+    Name: 'Model X',
+    MainInfo: [
+      { name: 'Battery', value: 'Long Range' },
+      { name: 'Weight', value: '5,498lb' },
+      { name: 'Acceleration', value: '2.6s 0-60 mph' },
+      { name: 'Range', value: '341 miles' },
+      { name: 'Drive', value: 'All-Wheel Drive' },
+      { name: 'Seating', value: '7 Adults' },
+      { name: 'Wheels', value: '22"' },
+      { name: 'Cargo', value: '88 cu ft' },
+      { name: 'Displays', value: '17" Touchscreen' },
+      { name: 'Warranty', value: 'Basic Vehicle - 4 years ' },
+    ],
+  },
 };
