@@ -1,7 +1,19 @@
 import React from 'react';
 import './CarInfoComponent.styles.scss';
+import { Redirect, useHistory, useRouteMatch } from 'react-router-dom';
+import PaymentPage from '../../pages/payment/PaymentPage';
 
 const CarInfoComponent = () => {
+  const { path } = useRouteMatch();
+  const [currentPath, setCurrentPath] = React.useState(
+    () => path.split('/')[1]
+  );
+  const history = useHistory();
+
+  const directToPayments = () => {
+    history.push(`/payment/${currentPath}`);
+  };
+
   return (
     <section className='car-info'>
       <div className='car-statistics'>
@@ -21,7 +33,7 @@ const CarInfoComponent = () => {
         <h6>Dual Motor</h6>
       </div>
       <div className='order-button'>
-        <button>ORDER NOW</button>
+        <button onClick={directToPayments}>ORDER NOW</button>
       </div>
     </section>
   );

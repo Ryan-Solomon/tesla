@@ -36,5 +36,12 @@
   padding: 0.4rem;
   background: none;
   border: 1px solid white;
-  //   add hover
+  transition: all 0.2s ease;
+
+  &:hover {
+    cursor: pointer;
+    background: whitesmoke;
+    color: #333;
+    transform: scale(0.94);
+  }
 }
