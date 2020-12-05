@@ -15,7 +15,7 @@ const ModelS = () => {
       animate='show'
       exit='exit'
     >
-      <LandingHero backgroundUrl={backgroundImage} title='Cybertruck' />
+      <LandingHero backgroundUrl={backgroundImage} title='Model S' />
       <Interior />
       <Specs />
     </motion.div>

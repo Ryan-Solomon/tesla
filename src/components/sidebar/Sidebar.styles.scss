@@ -55,6 +55,11 @@
   animation: showsidebar 1s ease forwards;
 }
 
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
 @keyframes showsidebar {
   100% {
     opacity: 1;

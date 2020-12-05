@@ -1,6 +1,7 @@
 import React, { Dispatch, FC, SetStateAction } from 'react';
 import './Sidebar.styles.scss';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 type Props = {
   showSidebar: boolean;
@@ -26,12 +27,24 @@ const Sidebar: FC<Props> = ({ showSidebar, setShowSidebar }) => {
         X
       </motion.button>
       <ul className='sidebar-items'>
-        <li>MODEL S</li>
-        <li>MODEL 3</li>
-        <li>MODEL X</li>
-        <li>MODEL Y</li>
-        <li>Roadster</li>
-        <li>CyberTruck</li>
+        <Link to='/modelS'>
+          <li>MODEL S</li>
+        </Link>
+        <Link to='/model3'>
+          <li>MODEL 3</li>
+        </Link>
+        <Link to='/modelX'>
+          <li>MODEL X</li>
+        </Link>
+        <Link to='/modelY'>
+          <li>MODEL Y</li>
+        </Link>
+        <Link to='/roadster'>
+          <li>ROADSTER</li>
+        </Link>
+        <Link to='/cybertruck'>
+          <li>CYBERTRUCK</li>
+        </Link>
       </ul>
     </section>
   );

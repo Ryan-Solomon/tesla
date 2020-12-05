@@ -15,7 +15,7 @@ const Roadster = () => {
       animate='show'
       exit='exit'
     >
-      <LandingHero backgroundUrl={backgroundImage} title='Cybertruck' />
+      <LandingHero backgroundUrl={backgroundImage} title='Roadster' />
       <Interior />
       <Specs />
     </motion.div>
