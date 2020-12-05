@@ -12,7 +12,9 @@ const Nav = () => {
     <>
       <nav className='nav'>
         <div className='tesla-logo'>
-          <h1>TESLA</h1>
+          <Link to='/'>
+            <h1>TESLA</h1>
+          </Link>
         </div>
         <ul className='nav-items'>
           <Link to='/modelS'>
