@@ -4,6 +4,7 @@ import { pageAnimation } from '../../animations/animations';
 import LandingHero from '../../components/landing-hero/LandingHero';
 import Interior from '../../components/interior/Interior';
 import Specs from '../../components/car-specs/Specs';
+import backgroundImage from '../../img/cybertruck_bg.jpg';
 
 const CyberTruck = () => {
   return (

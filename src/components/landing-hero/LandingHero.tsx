@@ -31,7 +31,7 @@ const LandingHero: FC<Props> = ({ title, backgroundUrl }) => {
           {title}
         </motion.h1>
       </header>
-      <CarInfoComponent />
+      {title === 'TESLA' ? null : <CarInfoComponent />}
     </div>
   );
 };
