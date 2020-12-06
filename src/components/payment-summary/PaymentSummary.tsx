@@ -4,13 +4,34 @@ import { useParams } from 'react-router-dom';
 import { useAppContext } from '../../context/appContext';
 
 const PaymentSummary = () => {
-  // Grab vehicle info from store
-  // Use useRouteMatch to get what vehicle you're ordering
   const { car } = useParams<{ car: string }>();
   const { vehicles } = useAppContext();
   const currVehicle = vehicles[car];
+  const { Price, Name, Image, MainInfo } = currVehicle;
 
-  return <div>{currVehicle.Name}</div>;
+  return (
+    <section>
+      <div className='image'>
+        <img src={Image} alt={Name} />
+        <h5>Estimated Delivery: 2-4 weeks</h5>
+      </div>
+      <div className='summary'>
+        <ul>
+          {MainInfo.map((item) => {
+            return (
+              <li>
+                {item.name} {item.value}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+      <div className='money-due'>
+        <h2>Due Today: </h2>
+        <h2>{Price} </h2>
+      </div>
+    </section>
+  );
 };
 
 export default PaymentSummary;
