@@ -45,3 +45,9 @@
     transform: scale(0.94);
   }
 }
+
+.icon {
+  grid-column: 2/4;
+  position: relative;
+  top: 3rem;
+}
