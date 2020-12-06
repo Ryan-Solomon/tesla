@@ -3,6 +3,7 @@ import './CarInfoComponent.styles.scss';
 import { Redirect, useHistory, useRouteMatch } from 'react-router-dom';
 import PaymentPage from '../../pages/payment/PaymentPage';
 import { AiFillCaretDown } from 'react-icons/ai';
+import { motion } from 'framer-motion';
 
 const CarInfoComponent = () => {
   const { path } = useRouteMatch();
@@ -37,9 +38,17 @@ const CarInfoComponent = () => {
         <div className='order-button'>
           <button onClick={directToPayments}>ORDER NOW</button>
         </div>
-        <div className='icon'>
+        <motion.div
+          animate={{
+            scale: [1, 2, 2, 1, 1],
+            rotate: [0, 0, 270, 270, 0],
+            borderRadius: ['20%', '20%', '50%', '50%', '20%'],
+          }}
+          transition={{ duration: 2, delay: 1 }}
+          className='icon'
+        >
           <AiFillCaretDown color='grey' size={30} />
-        </div>
+        </motion.div>
       </section>
     </>
   );
