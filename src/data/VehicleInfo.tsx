@@ -1,9 +1,15 @@
 import { TVehicleInfo } from '../types/types';
+import Model3Image from '../img/model3Home.jpg';
+import ModelSImage from '../img/modelS.jpg';
+import ModelXImage from '../img/modX.jpg';
+import ModelYImage from '../img/modelY.jpg';
+import RoadsterImage from '../img/roadster.jpg';
+import CybertruckImage from '../img/cybertruck_bg.jpg';
 
 export const vehicleInfo: TVehicleInfo = {
   model3: {
     Name: 'Model 3',
-    Image: '../img/model3Home.jpg',
+    Image: Model3Image,
     Price: 42690,
     MainInfo: [
       { name: 'Battery', value: 'Long Range' },
@@ -20,7 +26,7 @@ export const vehicleInfo: TVehicleInfo = {
   },
   modelX: {
     Name: 'Model X',
-    Image: '../img/modX.jpg',
+    Image: ModelXImage,
     Price: 74690,
     MainInfo: [
       { name: 'Battery', value: 'Long Range' },
@@ -37,7 +43,7 @@ export const vehicleInfo: TVehicleInfo = {
   },
   modelY: {
     Name: 'Model Y',
-    Image: '../img/modelY.jpg',
+    Image: ModelYImage,
     Price: 47680,
     MainInfo: [
       { name: 'Battery', value: 'Long Range' },
@@ -54,7 +60,7 @@ export const vehicleInfo: TVehicleInfo = {
   },
   modelS: {
     Name: 'Model S',
-    Image: '../img/modelS.jpg',
+    Image: ModelSImage,
     Price: 76920,
     MainInfo: [
       { name: 'Battery', value: 'Long Range' },
@@ -71,7 +77,7 @@ export const vehicleInfo: TVehicleInfo = {
   },
   roadster: {
     Name: 'Roadster',
-    Image: '../img/roadster.jpg',
+    Image: RoadsterImage,
     Price: 200000,
     MainInfo: [
       { name: 'Battery', value: 'Long Range' },
@@ -88,7 +94,7 @@ export const vehicleInfo: TVehicleInfo = {
   },
   cybertruck: {
     Name: 'Cybertruck',
-    Image: '../img/cybertruck_bg.jpg',
+    Image: CybertruckImage,
     Price: 49900,
     MainInfo: [
       { name: 'Battery', value: 'Long Range' },
