@@ -40,7 +40,7 @@ const Nav = () => {
           <motion.button
             onClick={() => setShowSidebar(true)}
             className='hamburger-button'
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
           >
             <GiHamburgerMenu />

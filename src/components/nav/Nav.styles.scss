@@ -27,6 +27,9 @@
 button.hamburger-button {
   background: none;
   border: none;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .nav a {

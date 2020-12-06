@@ -1,5 +1,6 @@
 export type TCarInfo = {
   Name: string;
+  Image: string;
   MainInfo: [
     { name: string; value: string },
     { name: string; value: string },

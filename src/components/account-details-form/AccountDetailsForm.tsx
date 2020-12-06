@@ -24,9 +24,8 @@ const AccountDetailsForm = () => {
         </section>
       </form>
       <p>
-        By entering my account details above, I agree to be contacted about
-        Tesla products, including through automated calls or texts. This is not
-        a condition of purchase.
+        This form is not currently hooked up to a backend, so submitting the
+        form will have no effect.
       </p>
     </section>
   );

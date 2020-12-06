@@ -3,6 +3,7 @@ import { TVehicleInfo } from '../types/types';
 export const vehicleInfo: TVehicleInfo = {
   model3: {
     Name: 'Model 3',
+    Image: '../img/model3Home.jpg',
     MainInfo: [
       { name: 'Battery', value: 'Long Range' },
       { name: 'Weight', value: '4,065lb' },
@@ -18,6 +19,7 @@ export const vehicleInfo: TVehicleInfo = {
   },
   modelX: {
     Name: 'Model X',
+    Image: '../img/modX.jpg',
     MainInfo: [
       { name: 'Battery', value: 'Long Range' },
       { name: 'Weight', value: '5,498lb' },
@@ -33,6 +35,7 @@ export const vehicleInfo: TVehicleInfo = {
   },
   modelY: {
     Name: 'Model Y',
+    Image: '../img/modelY.jpg',
     MainInfo: [
       { name: 'Battery', value: 'Long Range' },
       { name: 'Weight', value: '5,498lb' },
@@ -48,6 +51,7 @@ export const vehicleInfo: TVehicleInfo = {
   },
   modelS: {
     Name: 'Model S',
+    Image: '../img/modelS.jpg',
     MainInfo: [
       { name: 'Battery', value: 'Long Range' },
       { name: 'Weight', value: '5,498lb' },
@@ -63,6 +67,7 @@ export const vehicleInfo: TVehicleInfo = {
   },
   roadster: {
     Name: 'Roadster',
+    Image: '../img/roadster.jpg',
     MainInfo: [
       { name: 'Battery', value: 'Long Range' },
       { name: 'Weight', value: '5,498lb' },
@@ -78,6 +83,7 @@ export const vehicleInfo: TVehicleInfo = {
   },
   cybertruck: {
     Name: 'Cybertruck',
+    Image: '../img/cybertruck_bg.jpg',
     MainInfo: [
       { name: 'Battery', value: 'Long Range' },
       { name: 'Weight', value: '5,498lb' },
