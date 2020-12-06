@@ -1,0 +1,39 @@
+.image {
+  color: white;
+  h5 {
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+  }
+}
+
+.image img {
+  width: 30rem;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  object-fit: cover;
+  box-shadow: 2px 2px 10px rgba($color: #000000, $alpha: 0.6);
+}
+
+.summary ul {
+  list-style: none;
+  color: white;
+  border-bottom: 1px solid white;
+  padding-bottom: 0.2rem;
+
+  li {
+    margin: 1rem 0;
+    font-size: 1.3rem;
+  }
+}
+
+.money-due {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}

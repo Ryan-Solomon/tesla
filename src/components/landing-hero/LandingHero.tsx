@@ -13,8 +13,9 @@ const LandingHero: FC<Props> = ({ title, backgroundUrl }) => {
   const backgroundStyles = {
     background: `linear-Gradient(
       to bottom,
-      rgba(245, 246, 252, 0.52),
-      rgba(0, 0, 0, 0.844)
+     
+      rgba(0, 0, 0, 0.844),
+       rgba(67, 67, 67, 0.52)
     ),
     url(${backgroundUrl}) center center / cover no-repeat`,
   };

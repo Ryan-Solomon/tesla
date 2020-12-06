@@ -43,7 +43,7 @@ const Nav = () => {
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
           >
-            <GiHamburgerMenu />
+            <GiHamburgerMenu color='white' />
           </motion.button>
         </div>
       </nav>

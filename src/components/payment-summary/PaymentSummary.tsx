@@ -10,7 +10,7 @@ const PaymentSummary = () => {
   const { Price, Name, Image, MainInfo } = currVehicle;
 
   return (
-    <section>
+    <section className='payment-summary'>
       <div className='image'>
         <img src={Image} alt={Name} />
         <h5>Estimated Delivery: 2-4 weeks</h5>
@@ -28,7 +28,7 @@ const PaymentSummary = () => {
       </div>
       <div className='money-due'>
         <h2>Due Today: </h2>
-        <h2>{Price} </h2>
+        <h2>{Price.toLocaleString()} </h2>
       </div>
     </section>
   );
