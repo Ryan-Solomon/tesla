@@ -15,7 +15,7 @@ const LandingHero: FC<Props> = ({ title, backgroundUrl }) => {
       to bottom,
      
       rgba(0, 0, 0, 0.844),
-       rgba(67, 67, 67, 0.52)
+       rgba(38, 38, 38, 0.7)
     ),
     url(${backgroundUrl}) center center / cover no-repeat`,
   };
@@ -32,7 +32,13 @@ const LandingHero: FC<Props> = ({ title, backgroundUrl }) => {
           {title}
         </motion.h1>
       </header>
-      {title === 'TESLA' ? null : <CarInfoComponent />}
+      {title === 'TESLA' ? (
+        <h2 style={{ marginTop: '8rem', color: 'whitesmoke' }}>
+          Accelerating the world's transition to sustainable energy
+        </h2>
+      ) : (
+        <CarInfoComponent />
+      )}
     </div>
   );
 };
