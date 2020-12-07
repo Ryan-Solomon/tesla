@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import React, { FC } from 'react';
+import { AiFillCaretDown } from 'react-icons/ai';
 import { titleAnimation } from '../../animations/animations';
 import CarInfoComponent from '../car-info-component/CarInfoComponent';
 import './LandingHero.styles.scss';
@@ -37,7 +38,20 @@ const LandingHero: FC<Props> = ({ title, backgroundUrl }) => {
           Accelerating the world's transition to sustainable energy
         </h2>
       ) : (
-        <CarInfoComponent />
+        <>
+          <CarInfoComponent />
+          <motion.div
+            animate={{
+              scale: [1, 2, 2, 1, 1],
+              rotate: [0, 0, 270, 270, 0],
+              borderRadius: ['20%', '20%', '50%', '50%', '20%'],
+            }}
+            transition={{ duration: 2, delay: 1 }}
+            className='icon'
+          >
+            <AiFillCaretDown color='grey' size={30} />
+          </motion.div>
+        </>
       )}
     </div>
   );
