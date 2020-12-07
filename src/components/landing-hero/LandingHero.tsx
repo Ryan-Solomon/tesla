@@ -24,12 +24,7 @@ const LandingHero: FC<Props> = ({ title, backgroundUrl }) => {
   return (
     <div style={backgroundStyles} className='model-3-top-container'>
       <header>
-        <motion.h1
-          variants={titleAnimation}
-          initial='hidden'
-          animate='show'
-          className='car-title'
-        >
+        <motion.h1 variants={titleAnimation} className='car-title'>
           {title}
         </motion.h1>
       </header>
@@ -42,11 +37,9 @@ const LandingHero: FC<Props> = ({ title, backgroundUrl }) => {
           <CarInfoComponent />
           <motion.div
             animate={{
-              scale: [1, 2, 2, 1, 1],
-              rotate: [0, 0, 270, 270, 0],
-              borderRadius: ['20%', '20%', '50%', '50%', '20%'],
+              rotate: 360,
             }}
-            transition={{ duration: 2, delay: 1 }}
+            transition={{ duration: 2, delay: 2, type: 'spring' }}
             className='icon'
           >
             <AiFillCaretDown color='grey' size={30} />

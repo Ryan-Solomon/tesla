@@ -4,6 +4,7 @@ import { Redirect, useHistory, useRouteMatch } from 'react-router-dom';
 import PaymentPage from '../../pages/payment/PaymentPage';
 import { AiFillCaretDown } from 'react-icons/ai';
 import { motion } from 'framer-motion';
+import { fade } from './../../animations/animations';
 
 const CarInfoComponent = () => {
   const { path } = useRouteMatch();
@@ -18,7 +19,7 @@ const CarInfoComponent = () => {
 
   return (
     <>
-      <section className='car-info'>
+      <motion.section variants={fade} className='car-info'>
         <div className='car-statistics'>
           <h3>
             3.1<span className='seconds'>s</span>
@@ -38,7 +39,7 @@ const CarInfoComponent = () => {
         <div className='order-button'>
           <button onClick={directToPayments}>ORDER NOW</button>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };
