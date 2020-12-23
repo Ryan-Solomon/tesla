@@ -1,20 +1,13 @@
 import React from 'react';
 import CarInfoComponent from '../car-info-component/CarInfoComponent';
 import './Interior.styles.scss';
-import { useInView } from 'react-intersection-observer';
-import { useAnimation } from 'framer-motion';
 import { fade } from './../../animations/animations';
 import { motion } from 'framer-motion';
+import { useScroll } from './../use-scroll/useScroll';
 
 const Interior = () => {
-  const [element, view] = useInView({ threshold: 0.3 });
-  const controls = useAnimation();
-  if (view) {
-    controls.start('show');
-  } else {
-    controls.start('hidden');
-  }
-  console.log(view);
+  const [element, controls] = useScroll();
+
   return (
     <motion.div
       variants={fade}
