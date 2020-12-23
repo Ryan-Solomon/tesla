@@ -1,10 +1,28 @@
 import React from 'react';
 import CarInfoComponent from '../car-info-component/CarInfoComponent';
 import './Interior.styles.scss';
+import { useInView } from 'react-intersection-observer';
+import { useAnimation } from 'framer-motion';
+import { fade } from './../../animations/animations';
+import { motion } from 'framer-motion';
 
 const Interior = () => {
+  const [element, view] = useInView({ threshold: 0.3 });
+  const controls = useAnimation();
+  if (view) {
+    controls.start('show');
+  } else {
+    controls.start('hidden');
+  }
+  console.log(view);
   return (
-    <div className='interior-container'>
+    <motion.div
+      variants={fade}
+      animate={controls}
+      initial='hidden'
+      ref={element}
+      className='interior-container'
+    >
       <div className='model-3-interior-container'>
         <CarInfoComponent />
       </div>
@@ -24,7 +42,7 @@ const Interior = () => {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
