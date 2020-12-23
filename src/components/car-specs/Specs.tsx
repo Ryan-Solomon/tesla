@@ -2,10 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { useRouteMatch } from 'react-router-dom';
 import { useAppContext } from '../../context/appContext';
 import './Specs.styles.scss';
+import { useScroll } from './../use-scroll/useScroll';
+import { motion } from 'framer-motion';
+import { fade } from './../../animations/animations';
 
 const Specs = () => {
   const { path } = useRouteMatch();
   const [vehicle, setVehicle] = useState(path.slice(1));
+  const [element, controls] = useScroll();
 
   useEffect(() => {
     setVehicle(path.slice(1));
@@ -19,7 +23,13 @@ const Specs = () => {
   const { Name, MainInfo } = currentVehicle;
 
   return (
-    <section className='specs-container'>
+    <motion.section
+      initial='hidden'
+      variants={fade}
+      ref={element}
+      animate={controls}
+      className='specs-container'
+    >
       <div className='hero-image'></div>
       <div className='specs-info'>
         <div className='specs-title'>
@@ -37,7 +47,7 @@ const Specs = () => {
           })}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

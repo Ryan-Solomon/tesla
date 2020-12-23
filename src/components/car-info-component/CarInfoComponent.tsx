@@ -1,8 +1,7 @@
 import React from 'react';
 import './CarInfoComponent.styles.scss';
 import { Redirect, useHistory, useRouteMatch } from 'react-router-dom';
-import PaymentPage from '../../pages/payment/PaymentPage';
-import { AiFillCaretDown } from 'react-icons/ai';
+
 import { motion } from 'framer-motion';
 import { fade } from './../../animations/animations';
 
