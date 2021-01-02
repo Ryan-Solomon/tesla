@@ -18,8 +18,6 @@ const Specs = () => {
   const { vehicles } = useAppContext();
   const currentVehicle = vehicles[vehicle];
 
-  console.log(vehicle);
-
   const { Name, MainInfo } = currentVehicle;
 
   return (

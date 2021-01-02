@@ -37,3 +37,13 @@ button.hamburger-button {
   text-decoration: none;
   color: white;
 }
+
+.hideShow {
+  display: flex;
+}
+
+@media (max-width: 700px) {
+  .hideShow {
+    display: none;
+  }
+}

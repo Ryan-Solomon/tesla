@@ -16,7 +16,7 @@ const Nav = () => {
             <h1>TESLA</h1>
           </Link>
         </div>
-        <ul className='nav-items'>
+        <ul className='nav-items hideShow'>
           <Link to='/modelS'>
             <li>MODEL S</li>
           </Link>
