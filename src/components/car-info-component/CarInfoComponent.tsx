@@ -7,9 +7,7 @@ import { fade } from './../../animations/animations';
 
 const CarInfoComponent = () => {
   const { path } = useRouteMatch();
-  const [currentPath, setCurrentPath] = React.useState(
-    () => path.split('/')[1]
-  );
+  const [currentPath, _] = React.useState(() => path.split('/')[1]);
   const history = useHistory();
 
   const directToPayments = () => {
