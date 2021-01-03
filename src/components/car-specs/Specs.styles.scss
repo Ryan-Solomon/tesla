@@ -4,6 +4,7 @@
   width: 100vw;
   display: grid;
   grid-template-columns: 2fr 5fr;
+  overflow-x: hidden;
 }
 
 .hero-image {
@@ -50,5 +51,15 @@
   }
   h5 {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .specs-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image {
+    display: none;
   }
 }
