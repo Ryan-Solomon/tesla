@@ -19,7 +19,7 @@ const PaymentSummary = () => {
         <ul>
           {MainInfo.map((item) => {
             return (
-              <li>
+              <li key={item.name}>
                 {item.name} {item.value}
               </li>
             );
