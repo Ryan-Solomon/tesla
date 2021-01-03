@@ -37,3 +37,10 @@
   display: flex;
   flex-direction: column;
 }
+
+@media (max-width: 700px) {
+  .account-details-form {
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+  }
+}
