@@ -6,7 +6,7 @@ const initialContext: TInitialContext = {
   vehicles: vehicleInfo,
 };
 
-const AppContext = React.createContext<TInitialContext>(initialContext);
+export const AppContext = React.createContext<TInitialContext>(initialContext);
 
 export const AppProvider: FC<ReactNode> = ({ children }) => {
   const [vehicles, setVehicles] = useState(vehicleInfo);
